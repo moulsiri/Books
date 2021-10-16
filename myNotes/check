@@ -1,0 +1,18 @@
+
+
+Till now whenever we consider variable we need to mention the data type but one more is also need to be mentioned that is it's storage type. By mentioning data type, we are allotting a particular amount of memory to the variable (like 4 byte for int, 8 bytes for float etc.) but this information is partial unless we know the way in which this memory is stored inside the cpu. Meaning just like variables have data types they also have storage classes.
+
+We don't need to mention it , because it can be provided by C (by default).If we don’t specify the storage class of a  variable in its declaration, the compiler will assume a storage class  depending on the context in which the variable is used.Thus, variables  have certain default storage classes. From C compiler’s point of view, a variable name identifies some  physical location within the computer where the string of bits  representing the variable’s value is stored. There are basically two kinds  of locations in a computer where such a value may be kept— Memory  and CPU registers. It is the variable’s storage class that determines in  which of these two types of locations, the value is stored.
+
+There are four storage classes in C:  
+(a) Automatic storage class 
+(b) Register storage class 
+(c) Static storage class 
+(d) External storage class
+A variable's storage class tells us the following aspects:
+where the variable is stored inside the memory
+what is the life of the variable (that is how long the variable be available)
+what is the scope of that variable (that is which types of function can use that variable)
+what is the initial value of the variable
+
+Let's see all these types of storage classes one by one....
